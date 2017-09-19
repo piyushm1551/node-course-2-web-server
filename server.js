@@ -53,6 +53,14 @@ res.render('about.hbs',{
 });
 });
 
+app.get('/projects',(req,res) => {
+res.render('projects.hbs',{
+  message : 'Welcome to the portfolio page',
+  pageTitle: 'Portfolio Page',
+  //currentYear : new Date().getFullYear()
+});
+});
+
 app.get('/bad',(req,res) => {
 res.send({
   message : 'Error in sending data'
